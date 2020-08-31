@@ -151,6 +151,8 @@ int main(int argc, char* argv[])
 			<< std::setw(8)
 			<< "-"
 			<< sStrArr_2.StrArr[step] << std::endl;
+	delete[] sStrArr_1.StrArr;
+	delete[] sStrArr_2.StrArr;
 	ofile.close();
 	return 0;
 }
