@@ -1,2 +1,2 @@
-a.out: main.cpp
-	g++ -Wall main.cpp -o a.out
+AddWords.out: main.cpp
+	g++ -Wall main.cpp -o AddWords.out
