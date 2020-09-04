@@ -145,12 +145,12 @@ int main(int argc, char* argv[])
 	if(sStrArr_1.QuantityWords != sStrArr_2.QuantityWords)
 		std::cout << "not equal!" << std::endl;
 	for(unsigned int step = 0; step < QuantityWordsOutput; ++step)
-		ofile << std::left 
-			<< std::setw(sStrArr_1.theBiggestWordSize + 4)
-			<< sStrArr_1.StrArr[step]
-			<< std::setw(8)
-			<< "-"
-			<< sStrArr_2.StrArr[step] << std::endl;
+		ofile << std::left
+                        << std::setw(sStrArr_1.theBiggestWordSize + 4)
+                        << sStrArr_1.StrArr[step]
+                        << "\t-\t"
+                        << sStrArr_2.StrArr[step] << std::endl;
+
 	delete[] sStrArr_1.StrArr;
 	delete[] sStrArr_2.StrArr;
 	ofile.close();
